@@ -6,6 +6,7 @@ import { Rergister } from "../components/Forms/Rergister";
 import { SearchDocuments } from "../components/searchDocuments/SearchDocuments";
 import { OrderDetails } from "../components/orderDetails/OrderDetails";
 import { OrderDetailsFinally } from "../components/orderFinally/OrderDetailsFinally";
+import { UpgradeFile } from "../components/upgradeFile/UpgradeFile";
 
 export const Router = createBrowserRouter([
   {
@@ -35,5 +36,9 @@ export const Router = createBrowserRouter([
   {
     path: "/order",
     element: <OrderDetailsFinally />,
+  },
+  {
+    path: "/subir-archivo",
+    element: <UpgradeFile />,
   },
 ]);
