@@ -12,6 +12,7 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { Formik } from "formik";
 import { NavLink } from "react-router-dom";
+import { Title } from "../commons/Title";
 
 export const Login = () => {
   const [showPassword, setShowPassword] = useState();
@@ -23,8 +24,8 @@ export const Login = () => {
   };
 
   return (
-    <div>
-      <h1 className="mb-10">Iniciar Sesión</h1>
+    <div className="w-96 mx-auto h-screen flex flex-col justify-center">
+      <Title text={"Iniciar Sesión"} />
       <Formik
         initialValues={{ email: "", password: "" }}
         validate={(values) => {

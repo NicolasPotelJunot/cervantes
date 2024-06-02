@@ -11,6 +11,7 @@ import {
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { Formik } from "formik";
+import { Title } from "../commons/Title";
 
 export const Rergister = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -30,8 +31,8 @@ export const Rergister = () => {
   };
 
   return (
-    <div>
-      <h1 className="mb-10">Registrarse</h1>
+    <div className="w-96 mx-auto h-screen flex flex-col justify-center">
+      <Title text={"Registrarse"} />
       <Formik
         initialValues={{
           email: "",
@@ -84,7 +85,6 @@ export const Rergister = () => {
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.name}
-              // id="outlined-basic"
               label="Nombre completo"
               variant="filled"
             />
@@ -107,7 +107,6 @@ export const Rergister = () => {
                 Contraseña
               </InputLabel>
               <FilledInput
-                // id="outlined-adornment-password"
                 name="password"
                 onChange={handleChange}
                 value={values.password}
@@ -133,7 +132,6 @@ export const Rergister = () => {
                 Confirmar contraseña
               </InputLabel>
               <FilledInput
-                // id="outlined-adornment-password"
                 name="confirmpassword"
                 onChange={handleChange}
                 value={values.confirmpassword}

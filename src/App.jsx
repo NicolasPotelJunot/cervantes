@@ -4,7 +4,7 @@ function App() {
 
   return (
     <div>
-      asdad
+      home
     </div>
   )
 }
