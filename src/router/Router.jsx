@@ -9,6 +9,8 @@ import { OrderDetailsFinally } from "../components/orderFinally/OrderDetailsFina
 import { UpgradeFile } from "../components/upgradeFile/UpgradeFile";
 import { UsersList } from "../components/users list/UsersList";
 import { ModifyUser } from "../components/modify User/ModifyUser";
+import { AdministrationDocuments } from "../components/administration documents/AdministrationDocuments";
+import { ModifyDocument } from "../components/modify document/ModifyDocument";
 
 export const Router = createBrowserRouter([
   {
@@ -54,5 +56,13 @@ export const Router = createBrowserRouter([
   {
     path: "/modify-user",
     element: <ModifyUser />,
+  },
+  {
+    path: "/administration-documents",
+    element: <AdministrationDocuments />,
+  },
+  {
+    path: "/modify-documents",
+    element: <ModifyDocument />,
   },
 ]);
