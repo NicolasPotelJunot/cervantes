@@ -7,6 +7,8 @@ import { SearchDocuments } from "../components/searchDocuments/SearchDocuments";
 import { OrderDetails } from "../components/orderDetails/OrderDetails";
 import { OrderDetailsFinally } from "../components/orderFinally/OrderDetailsFinally";
 import { UpgradeFile } from "../components/upgradeFile/UpgradeFile";
+import { UsersList } from "../components/users list/UsersList";
+import { ModifyUser } from "../components/modify User/ModifyUser";
 
 export const Router = createBrowserRouter([
   {
@@ -40,5 +42,17 @@ export const Router = createBrowserRouter([
   {
     path: "/subir-archivo",
     element: <UpgradeFile />,
+  },
+  {
+    path: "/subir-archivo",
+    element: <UpgradeFile />,
+  },
+  {
+    path: "/list-users",
+    element: <UsersList />,
+  },
+  {
+    path: "/modify-user",
+    element: <ModifyUser />,
   },
 ]);

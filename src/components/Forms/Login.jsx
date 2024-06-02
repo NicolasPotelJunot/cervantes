@@ -98,7 +98,7 @@ export const Login = () => {
 
             {errors.password && touched.password && errors.password}
             <Button variant="contained" type="submit">
-              Hello world
+              Ingresar
             </Button>
           </form>
         )}
