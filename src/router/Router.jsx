@@ -11,6 +11,7 @@ import { UsersList } from "../components/users list/UsersList";
 import { ModifyUser } from "../components/modify User/ModifyUser";
 import { AdministrationDocuments } from "../components/administration documents/AdministrationDocuments";
 import { ModifyDocument } from "../components/modify document/ModifyDocument";
+import { AdministratorProducts } from "../components/administration products/AdministratorProducts";
 
 export const Router = createBrowserRouter([
   {
@@ -64,5 +65,9 @@ export const Router = createBrowserRouter([
   {
     path: "/modify-documents",
     element: <ModifyDocument />,
+  },
+  {
+    path: "/administration-products",
+    element: <AdministratorProducts />,
   },
 ]);
